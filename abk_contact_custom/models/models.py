@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class custom_res_partner(models.Model):
     _inherit = 'res.partner'
     name_chinese = fields.Char('Chinese Name')
+    name_english = fields.Char('English Name')
 
     # Address fields
     chinese_street = fields.Char('Street', readonly=False, store=True)
