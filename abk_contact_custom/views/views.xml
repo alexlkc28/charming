@@ -7,15 +7,15 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//sheet/group/group" position="inside">
-                  <label for="chinese_street" string="Chinese Address"/>
-                    <div class="o_address_format">
-                      <field name="chinese_street" placeholder="Street..." class="o_address_street"/>
-                      <field name="chinese_street2" placeholder="Street 2..." class="o_address_street"/>
-                      <field name="chinese_city" placeholder="City" class="o_address_city"/>
-                      <field name="chinese_state_id" class="o_address_state" placeholder="State" options='{"no_open": True}'/>
-                      <field name="chinese_zip" placeholder="ZIP" class="o_address_zip"/>
-                      <field name="chinese_country_id" placeholder="Country" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
-                    </div>
+                      <field name="name_english" placeholder="English Name"/>
+                      <field name="address_english" placeholder="English Address"/>
+                      <field name="address_chinese" placeholder="Chinese Address"/>
+                      <field name="fax" placeholder="Fax"/>
+                      <field name="attention" placeholder="Attention"/>
+                      <field name="invattn" placeholder="Invoice Attention"/>
+                      <field name="contact" placeholder="Contact"/>
+                      <field name="lang_use" placeholder="Language"/>
+                      <field name="payterm" placeholder="Payterm"/>
                 </xpath>
             </field>
         </record>
