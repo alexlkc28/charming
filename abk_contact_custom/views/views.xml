@@ -7,15 +7,19 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//sheet/group/group" position="inside">
-                      <field name="name_english" placeholder="English Name"/>
-                      <field name="address_english" placeholder="English Address"/>
-                      <field name="address_chinese" placeholder="Chinese Address"/>
-                      <field name="fax" placeholder="Fax"/>
-                      <field name="attention" placeholder="Attention"/>
-                      <field name="invattn" placeholder="Invoice Attention"/>
-                      <field name="contact" placeholder="Contact"/>
-                      <field name="lang_use" placeholder="Language"/>
-                      <field name="payterm" placeholder="Payterm"/>
+                    <field name="name_english" placeholder="English Name"/>
+                    <field name="address_english" placeholder="English Address"/>
+                    <field name="address_chinese" placeholder="Chinese Address"/>
+                    <field name="fax" placeholder="Fax"/>
+                    <field name="attention" placeholder="Attention"/>
+                    <field name="invattn" placeholder="Invoice Attention"/>
+                    <field name="contact" placeholder="Contact"/>
+                    <field name="lang_use" placeholder="Language"/>
+                    <field name="payterm" placeholder="Payterm"/>
+                    <field name="paydesc" placeholder="Payment Description"/>
+                    <field name="remark" placeholder="Remark"/>
+                    <field name="monthpay" placeholder="Month pay"/>
+                    <field name="currency"/>
                 </xpath>
             </field>
         </record>
