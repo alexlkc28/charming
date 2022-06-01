@@ -23,6 +23,7 @@
                     <field name="discnt" placeholder="Month pay"/>
                     <field name="salescode" placeholder="Month pay"/>
                     <field name="invdiscnt" placeholder="Month pay"/>
+                    <field name="chiadd" placeholder="Month pay"/>
                     <field name="currency"/>
                 </xpath>
             </field>
