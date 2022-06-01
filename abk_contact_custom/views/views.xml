@@ -19,6 +19,10 @@
                     <field name="paydesc" placeholder="Payment Description"/>
                     <field name="remark" placeholder="Remark"/>
                     <field name="monthpay" placeholder="Month pay"/>
+                    <field name="crlimit" placeholder="Remark"/>
+                    <field name="discnt" placeholder="Month pay"/>
+                    <field name="salescode" placeholder="Month pay"/>
+                    <field name="invdiscnt" placeholder="Month pay"/>
                     <field name="currency"/>
                 </xpath>
             </field>

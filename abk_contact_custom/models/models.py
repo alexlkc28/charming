@@ -18,6 +18,10 @@ class custom_res_partner(models.Model):
     remark = fields.Text('Remark')
     monthpay = fields.Char('Month pay')
     currency = fields.Many2one("res.currency", string="Currency")
+    crlimit = fields.Char('Credit limit')
+    discnt = fields.Char('Discount')
+    sales_code = fields.Char('Sales Code')
+    invdiscnt = fields.Char('Invoice Discount')
     lang_use = fields.Selection([('english', 'E'), ('chinese', 'C')], string="Language")
     payterm = fields.Selection([('option_1', '0'), ('option_2', '7'),
                                 ('option_3', '15'), ('option_4', '20'),
