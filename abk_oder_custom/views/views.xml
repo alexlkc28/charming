@@ -7,9 +7,9 @@
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//sheet/group/group" position="inside">
-                    <field name="paid" placeholder="Paid"/>
-                    <field name="remaining" placeholder="Remaining"/>
-                    <field name="payment_schedule" placeholder="Payment Schedule"/>
+<!--                    <field name="paid" placeholder="Paid"/>-->
+<!--                    <field name="remaining" placeholder="Remaining"/>-->
+<!--                    <field name="payment_schedule" placeholder="Payment Schedule"/>-->
                 </xpath>
             </field>
         </record>
