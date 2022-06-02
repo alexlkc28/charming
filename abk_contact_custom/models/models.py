@@ -18,16 +18,22 @@ class custom_res_partner(models.Model):
     remark = fields.Text('Remark')
     monthpay = fields.Char('Month pay')
     currency = fields.Many2one("res.currency", string="Currency")
-    crlimit = fields.Char('Credit limit')
+    crlimit = fields.Selection(string="Credit Limited", selection=[('yes', 'Yes'), ('no', 'No')])
     discnt = fields.Char('Discount')
     sales_code = fields.Char('Sales Code')
     invdiscnt = fields.Char('Invoice Discount')
     chiadd = fields.Char('Chiadd')
+    allow_payment = fields.Char('Allow Payment')
+    auto_open_inv_ers_inv = fields.Selection([('openInvoice', 'Open Invoice'),
+                                              ('ersInvoice', 'ERS Invoice')],
+                                             string="Auto Open Invoice/ERS Invoice")
+    payment_type = fields.Selection([('bank', 'Bank'), ('creditCard', 'Credit Card'),
+                                     ('cash', 'Cash')], string="Payment Type")
     lang_use = fields.Selection([('english', 'E'), ('chinese', 'C')], string="Language")
-    payterm = fields.Selection([('option_1', '0'), ('option_2', '7'),
-                                ('option_3', '15'), ('option_4', '20'),
-                                ('option_5', '30'), ('option_6', '45'),
-                                ('option_7', '60'), ('option_8', '90')], string="Payterm")
+    payterm = fields.Selection([('0', '0'), ('7', '7'),
+                                ('15', '15'), ('20', '20'),
+                                ('30', '30'), ('45', '45'),
+                                ('60', '60'), ('90', '90')], string="Payterm")
 
 
 

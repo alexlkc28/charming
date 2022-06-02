@@ -19,11 +19,14 @@
                     <field name="paydesc" placeholder="Payment Description"/>
                     <field name="remark" placeholder="Remark"/>
                     <field name="monthpay" placeholder="Month pay"/>
-                    <field name="crlimit" placeholder="Remark"/>
-                    <field name="discnt" placeholder="Month pay"/>
-                    <field name="salescode" placeholder="Month pay"/>
-                    <field name="invdiscnt" placeholder="Month pay"/>
-                    <field name="chiadd" placeholder="Month pay"/>
+                    <field name="crlimit" placeholder="Credit Limited" widget="radio"  options="{'horizontal': true}"/>
+                    <field name="discnt" placeholder="Discount" />
+                    <field name="salescode" placeholder="Sales code"/>
+                    <field name="invdiscnt" placeholder="Invoice Discount"/>
+                    <field name="chiadd"/>
+                    <field name="allow_payment" placeholder="Allow Payment"/>
+                    <field name="payment_type" placeholder="Payment Type"/>
+                    <field name="auto_open_inv_ers_inv" placeholder="Auto Open Invoice/ERS Invoice" />
                     <field name="currency"/>
                 </xpath>
             </field>
