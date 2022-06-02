@@ -19,7 +19,7 @@
                     <field name="paydesc" placeholder="Payment Description"/>
                     <field name="remark" placeholder="Remark"/>
                     <field name="monthpay" placeholder="Month pay"/>
-                    <field name="crlimit" placeholder="Credit Limited" widget="radio"  options="{'horizontal': 1}"/>
+                    <field name="crlimit" placeholder="Credit Limited" widget="many2many_checkboxes"/>
                     <field name="discnt" placeholder="Discount" />
                     <field name="salescode" placeholder="Sales code"/>
                     <field name="invdiscnt" placeholder="Invoice Discount"/>
