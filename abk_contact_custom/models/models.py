@@ -18,7 +18,7 @@ class custom_res_partner(models.Model):
     remark = fields.Text('Remark')
     monthpay = fields.Char('Month pay')
     currency = fields.Many2one("res.currency", string="Currency")
-    crlimit = fields.Boolean("Credit Limited")
+    crlimit = fields.Boolean("Credit Limited", default=False)
     crlimit_amount = fields.Integer('Credit Limit Amount')
     discnt = fields.Char('Discount')
     sales_code = fields.Char('Sales Code')
