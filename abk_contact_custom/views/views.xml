@@ -20,6 +20,7 @@
                     <field name="remark" placeholder="Remark"/>
                     <field name="monthpay" placeholder="Month pay"/>
                     <field name="crlimit" placeholder="Credit Limited" widget="radio" class="oe_edit_only"/>
+                    <field name="crlimit_amount" placeholder="Credit Limit Amount"/>
                     <field name="discnt" placeholder="Discount" />
                     <field name="salescode" placeholder="Sales code"/>
                     <field name="invdiscnt" placeholder="Invoice Discount"/>
